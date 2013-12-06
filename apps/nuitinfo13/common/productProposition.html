@@ -24,11 +24,17 @@
 </head>
 
 <body>
-<div data-role="page" id="page1">
+<div data-role="page" id="forMe">
 	<div data-role="header">
-		<h1>Products</h1>
-	</div>
-	<h2 align="center">For Me</h2>
+		<h1>Products</h1>	
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#forMe" class="ui-btn-active ui-state-persist">For me</a></li>
+				<li><a href="#likeMe" data-transition="none">Like me</a></li>
+				<li><a href="#helpThem" data-transition="none">Help them</a></li>
+			</ul>
+		</div>
+	</div><!-- /header -->
 	<div class="ui-body-d">
     	<div class="ui-grid-a">
 		    <div class="product ui-block-a"><a href="#" ><img width="95%" height="95%" src="http://i2.cdscdn.com/pdt2/0/5/0/1/300x300/g64131h3050/rw/diesel-baskets-long-term-loop.jpg"/></a></div>
@@ -37,7 +43,18 @@
 		    <div class="product ui-block-b"><a href="#" ><img width="95%" height="95%" src="http://i2.cdscdn.com/pdt2/p/s/4/1/300x300/consoleps4/rw/console-ps4.jpg"/></a></div>
 		</div><!-- /grid-a -->
   	</div>
-	<h2 align="center">Like Me</h2>
+</div>
+<div data-role="page" id="likeMe">
+	<div data-role="header">
+		<h1>Products</h1>	
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#forMe" data-transition="none">For me</a></li>
+				<li><a href="#likeMe" class="ui-btn-active ui-state-persist">Like me</a></li>
+				<li><a href="#helpThem" data-transition="none">Help them</a></li>
+			</ul>
+		</div>
+	</div><!-- /header -->
 	<div class="ui-body-d">
     	<div class="ui-grid-a">
 		    <div class="product ui-block-a"><a href="#" ><img width="95%" height="95%" src="http://i2.cdscdn.com/pdt2/9/0/8/1/300x300/30100t0908/rw/kappa-baskets-yonker-homme.jpg"/></a></div>
@@ -46,13 +63,23 @@
 		    <div class="product ui-block-b"><a href="#" ><img width="95%" height="95%" src="http://i2.cdscdn.com/pdt2/0/h/f/2/300x300/haierlet50c800hf.jpg"/></a></div>
 		</div><!-- /grid-a -->
   	</div>
-  	<h2 align="center">Help them</h2>
+</div>
+<div data-role="page" id="helpThem">
+	<div data-role="header">
+		<h1>Products</h1>	
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#forMe" data-transition="none">For me</a></li>
+				<li><a href="#likeMe" data-transition="none">Like me</a></li>
+				<li><a href="#helpThem" class="ui-btn-active ui-state-persist">Help them</a></li>
+			</ul>
+		</div>
+	</div><!-- /header -->
 	<ul data-role="listview">
 	  <li><a href="#">Nike Red Soks</a></li>
 	  <li><a href="#">Diesel Black jaket</a></li>
 	  <li><a href="#">Celio Green t-shirt</a></li>
 	</ul>
-  	
 </div>
 </body>
 </html>
