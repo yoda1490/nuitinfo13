@@ -30,7 +30,7 @@ var procedure2Statement = WL.Server.createSQLStatement("INSERT INTO nuitinfo13.U
 function procedureCreate(param) {
 	return WL.Server.invokeSQLStatement({
 		preparedStatement : procedure2Statement,
-		parameters : param
+		parameters : [param]
 	});
 }
 

@@ -18,7 +18,7 @@
 		<copyright>Copyright My Company</copyright>
 		<homepage>/nuitinfo13/apps/services/preview/nuitinfo13/common/1.0/default/nuitinfo13.html</homepage>
 	</author>
-	<mainFile>createAccount.html</mainFile>
+	<mainFile>nuitinfo13.html</mainFile>
 	<thumbnailImage>common/images/thumbnail.png</thumbnailImage> 
 	<features>
 	</features>

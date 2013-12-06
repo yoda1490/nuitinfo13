@@ -12,7 +12,6 @@ var mySQLadaptator = "mySQLadaptator";
  */
 AcceesDB.prototype.getInfo = function() {
 //	alert("alo");
-//	accessDB.invokeProcedure(mySQLadaptator,"procedure1",null,listener.updateTexte,loadErrorMessage);
 	var invocationData = {
 		      adapter:mySQLadaptator,
 		      procedure:"procedure1",
@@ -24,14 +23,12 @@ AcceesDB.prototype.getInfo = function() {
 		  };
 		  
 		  WL.Client.invokeProcedure(invocationData, options);
-	alert("alsqo");
 	//listener.updateTexte();
 };
 
 AcceesDB.prototype.createUser = function(pseudo,mdp,genre,jour,profession) {
-	alert("too");
 	var invocationData = {
-		      adapter:mySQLadaptator,
+		      adapter: 'mySQLadaptator',
 		      procedure:"procedureCreate",
 		      parameters:[pseudo,mdp,genre,jour,profession],
 		  };
@@ -45,8 +42,9 @@ AcceesDB.prototype.createUser = function(pseudo,mdp,genre,jour,profession) {
 };
 
 function loadSuccees(result){
-	  alert("dudd");
-	}
+	  //load next page
+	//window.$.changePath("productProposition.html");
+}
 
 /**
  * General fail function
