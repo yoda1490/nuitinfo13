@@ -24,21 +24,21 @@ $("#buttonClick").on("tap",function(event) {
 /**
  * Formulaire de creation user
  */
-$("#buttonValider").on("click",function(event){
+//$("#buttonValider").bind("click",function(event){
+Listener.prototype.createUSer = function() {
 	
-	var pseudo = $("#text-1").val();
-	var mdp = $("#password-1").val();
+	var pseudo = "user";
+	var mdp = "mdr";
 	var genre = "TOTO";
-	var jour "12/12/1990";
-	var ville = "marseille";
+	var jour ="12/12/1990";
 	var profession = "prof";
-	var centre interet ="foot";
 	
 	
 	//Envoi information base de donnees
-	AcceesDB.prototype.createUser(pseudo,mdp,genre,jour,profession);
+	acceesDB.createUser(pseudo,mdp,genre,jour,profession);
+	alert("yo");
 	//AcceesDB.prototype.creteInteret(pseudo,centreinteret);
-});
+};
 
 
 

@@ -28,11 +28,12 @@ AcceesDB.prototype.getInfo = function() {
 	//listener.updateTexte();
 };
 
-AcceesDB.prototype.createUser = function(pseudo,mdp,genre,jour,ville,profession) {
+AcceesDB.prototype.createUser = function(pseudo,mdp,genre,jour,profession) {
+	alert("too");
 	var invocationData = {
 		      adapter:mySQLadaptator,
 		      procedure:"procedureCreate",
-		      parameters:[pseudo,mdp,genre,jour,ville,profession],
+		      parameters:[pseudo,mdp,genre,jour,profession],
 		  };
 		  var options ={
 		      onSuccess:loadSuccees,
@@ -44,7 +45,7 @@ AcceesDB.prototype.createUser = function(pseudo,mdp,genre,jour,ville,profession)
 };
 
 function loadSuccees(result){
-	  alert(result.invocationResult.isSuccessful);
+	  alert("dudd");
 	}
 
 /**
