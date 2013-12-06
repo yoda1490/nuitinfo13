@@ -26,11 +26,12 @@ function procedure1(param) {
  *
  * @return - invocationResult
  */
- 
-function procedure2(param) {
-	return WL.Server.invokeSQLStoredProcedure({
-		procedure : "storedProcedure2",
-		parameters : [param]
+var procedure2Statement = WL.Server.createSQLStatement("INSERT INTO nuitinfo13.User SET pseudo=?,password=?,sex=?,birth=?,job=?;");
+function procedureCreate(param) {
+	return WL.Server.invokeSQLStatement({
+		preparedStatement : procedure2Statement,
+		parameters : param
 	});
 }
+
 

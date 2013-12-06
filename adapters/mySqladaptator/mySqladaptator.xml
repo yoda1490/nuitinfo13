@@ -30,6 +30,6 @@
 
 	<!-- Replace this with appropriate procedures -->
 	<procedure name="procedure1"/>
-	<procedure name="procedure2"/>
+	<procedure name="procedureCreate"/>
 
 </wl:adapter>

@@ -28,24 +28,24 @@ AcceesDB.prototype.getInfo = function() {
 	//listener.updateTexte();
 };
 
-
-/** 
- * General function for invoke procedure adaptator
- */
-AccessDB.prototype.invokeProcedure = function (nameAdapator,nameProcedure,ListParameter,succees,failure){
-	alert("dans invoke procedure");
+AcceesDB.prototype.createUser = function(pseudo,mdp,genre,jour,ville,profession) {
 	var invocationData = {
-		      adapter:nameAdapator,
-		      procedure:nameProcedure,
-		      parameters:[ListParameter]
+		      adapter:mySQLadaptator,
+		      procedure:"procedureCreate",
+		      parameters:[pseudo,mdp,genre,jour,ville,profession],
 		  };
 		  var options ={
-		      onSuccess:listener.updateTexte,
-		      onFailure:failure
+		      onSuccess:loadSuccees,
+		      onFailure:loadErrorMessage
 		  };
 		  
 		  WL.Client.invokeProcedure(invocationData, options);
-} ;
+	
+};
+
+function loadSuccees(result){
+	  alert(result.invocationResult.isSuccessful);
+	}
 
 /**
  * General fail function
