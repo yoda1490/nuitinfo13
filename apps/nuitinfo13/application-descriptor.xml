@@ -16,7 +16,7 @@
 		<name>application's author</name>
 		<email>application author's e-mail</email>
 		<copyright>Copyright My Company</copyright>
-		<homepage>http://mycompany.com</homepage>
+		<homepage>/nuitinfo13/apps/services/preview/nuitinfo13/common/1.0/default/nuitinfo13.html</homepage>
 	</author>
 	<mainFile>nuitinfo13.html</mainFile>
 	<thumbnailImage>common/images/thumbnail.png</thumbnailImage> 
