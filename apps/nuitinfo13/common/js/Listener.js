@@ -9,38 +9,36 @@ function Listener() {
  */
 
 Listener.prototype.updateTexte = function(result) {
-	alert(result.invocationResult.resultSet);
-	alert(result.invocationResult.isSuccessful);
-	$("#result").val("resultat2");
+	//alert(result.invocationResult.resultSet);
+	//alert(result.invocationResult.isSuccessful);
+	$("#result").val(result.invocationResult.isSuccessful);
 };
 /**
  * a changer en "tap"
  */
-$("#buttonClick").on("click",function(event) {
+$("#buttonClick").on("tap",function(event) {
 	//$("#result").val("resultat");
 	AcceesDB.prototype.getInfo();
 });
 
-
 /**
- *Callback when nurse report a task
- *@callback
+ * Formulaire de creation user
  */
-/*Listener.prototype.callbackgetInfo = function(result){
-	if (result.invocationResult.reportTaskResponse.hasOwnProperty("error")){
-		ViewManager.prototype.displayError(result.invocationResult.reportTaskResponse.error);
-	} else{
-		boolean = (result.isSuccessful == "true" ) ? true : false;
-		if(boolean) {
-			alert("success");
-			alert(result.resultSet);
-		}
-		else {
-			alert("Fail to report this task.");
-			alert(result.resultSet);
-		}
-	}
-};*/
+$("#buttonValider").on("click",function(event){
+	
+	var pseudo = $("#text-1").val();
+	var mdp = $("#password-1").val();
+	var genre = "TOTO";
+	var jour "12/12/1990";
+	var ville = "marseille";
+	var profession = "prof";
+	var centre interet ="foot";
+	
+	
+	//Envoi information base de donnees
+	AcceesDB.prototype.createUser(pseudo,mdp,genre,jour,profession);
+	//AcceesDB.prototype.creteInteret(pseudo,centreinteret);
+});
 
 
 
